@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh !important;
+    width: 100%;
+}
+
+body {
+    background-image: url(/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vh;
+    color: #bdf9f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* ---------------------------------------- */
+#header {
+    /* border: 1px solid black; */
+    margin-bottom: -3vh;
+}
+
+h1 {
+    margin-left: 0.5vw;
+    font-family: 'Monoton', cursive;
+    font-size: 7vh;
+    font-weight: 100;
+    background: -webkit-linear-gradient(#fcef00, #ff00c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* ---------------------------------------- */
+#main {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    height: auto;
+    margin-bottom: 0.5vh;
+}
+
+/* INPUT FIELD*/
+#grid-size-input {
+    border: solid 3px #ea5c7b;
+    border-radius: 2px;
+    background-color: inherit;
+    font-family: 'Monoton', cursive;
+    color: #ea5c7b;
+    font-size: 2.5vh;
+    font-weight: 100;
+    width: 7vw;
+    text-align: center;
+    padding: 0.2vh 0.2vh;
+}
+
+::placeholder {
+    color: rgba(178, 191, 190, 0.3);
+}
+
+#grid-size-input:focus {
+    color: #ea5c7b;
+    outline: none;
+}
+
+#grid-size-input:focus::placeholder {
+    color: transparent;
+}
+
+#grid-size-input::-webkit-outer-spin-button,
+#grid-size-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#grid-size-input[type=number] {
+  -moz-appearance: textfield;
+}
+/* INPUT FIELD END*/
+
+#grid-size-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#grid-container {
+    width: 768px;
+    height: 768px;
+    background: linear-gradient(180deg, #fcf754, #ea3dba);
+}
+
+#refresh-button {
+    border: none;
+    background-color: inherit;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vh;
+    color: #bdf9f6;
+    cursor: pointer;
+}
+
+#refresh-button:hover {
+    color: #ea5c7b;
+    transform: scale(1.2);
+    margin-right: 0.5vw;
+}
+/* ---------------------------------------- */
+footer {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5vh;
+    font-size: 1.2vh;
+    /* opacity: 0.3; */
+}

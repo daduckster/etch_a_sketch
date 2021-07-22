@@ -6,12 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Monoton&family=Nova+Round&family=Press+Start+2P&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
+    <header id="header">
+        <h1>Try'n'Draw!</h1>
+    </header>
+
+    <main id="main">
+
+        <div id="menu-container">
+            <div id="grid-size-container">
+                <p class="menu-text">Side-length:</p>
+                <!-- <input type="number" name="grid-size" id="grid-size-input" min="1" max="100"
+                       placeholder="1-100" /> -->
+                <form action=""><input id="grid-size-input" type="number" min="1" max="100" placeholder="1-100" />
+                </form>
+            </div>
+            <div id="refresh-container">
+                <button id="refresh-button" type="submit">Clean</button>
+            </div>
+        </div>
+
+        <div id="grid-container"></div>
+
+    </main>
+
+    <footer>
+        <p>Not supported on mobile devices</p>
+    </footer>
 </body>
 
 </html>
