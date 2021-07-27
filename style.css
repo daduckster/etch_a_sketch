@@ -17,7 +17,7 @@ body {
     overflow: hidden;
     font-family: 'Press Start 2P', cursive;
     font-size: 2vh;
-    color: #bdf9f6;
+    color: #10eceb;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,12 +86,12 @@ h1 {
 
 #grid-size-input::-webkit-outer-spin-button,
 #grid-size-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #grid-size-input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 /* INPUT FIELD END*/
 
@@ -101,20 +101,12 @@ h1 {
     align-items: center;
 }
 
-#grid-container {
-    /* width: 768px; */
-    width: 73.5vmin;
-    /* height: 768px; */
-    height: 73.5vmin;
-    background: linear-gradient(180deg, #fcf754, #ea3dba);
-}
-
 #refresh-button {
     border: none;
     background-color: inherit;
     font-family: 'Press Start 2P', cursive;
     font-size: 2vh;
-    color: #bdf9f6;
+    color: #10eceb;
     cursor: pointer;
 }
 
@@ -124,6 +116,40 @@ h1 {
     margin-right: 0.5vw;
 }
 /* ---------------------------------------- */
+#grid-container {
+    display: grid;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center; */
+    width: 73.5vmin;
+    height: 73.5vmin;
+    /* background: linear-gradient(180deg, #fcf754, #ea3dba); */
+    background-color: inherit;
+}
+
+.alert {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vh;
+    color: #10eceb;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* #grid-container > div {
+    display: inline-block;
+} */
+
+.grid-cell {
+    background: linear-gradient(145deg, #b94860, #fa6284); 
+}
+
+.grid-cell-changed {
+    filter: drop-shadow( 0 0 1rem #10eceb);
+}
+
+/* ---------------------------------------- */
 footer {
     /* border: 1px solid black; */
     display: flex;
@@ -131,3 +157,4 @@ footer {
     margin-bottom: 0.5vh;
     font-size: 1.2vh;
 }
+
