@@ -1,14 +1,3 @@
-// const gridContainer = document.getElementById('grid-container');
-// const gridCell = document.createElement('div');
-// gridCell.innerHTML = 'TEXT';
-// gridCell.classList.add('grid-cell');
-// gridContainer.appendChild(gridCell);
-
-// const gridSize = document.getElementById('grid-size-input').value;
-// console.log(gridSize);
-
-// const gridSize = document.getElementById('grid-size-input');
-
 const gridSizeInput = document.getElementById('grid-size-input');
 const gridContainer = document.getElementById('grid-container');
 const refreshButton = document.getElementById('refresh-button');
@@ -63,20 +52,7 @@ function removeColor(e) {
 
 function changeColor(e) {
 	const gridCell = e.target;
-	// gridCell.classList.remove('grid-cell');
-	// gridCell.classList.add('grid-cell-changed');
 	let colors = [ '#0ff0fc', '#fc74fd', '#21fc0d', '#ccff00', '#bf00ff', '#55ffff', '#8f00f1', '#fffc00' ];
 	let randomColor = colors[Math.floor(Math.random() * colors.length)];
-	// let r = Math.floor(Math.random() * 256);
-	// let g = Math.floor(Math.random() * 256);
-	// let b = Math.floor(Math.random() * 256);
-	// let randomColor = `rgb(${r}, ${g}, ${b})`;
-
-	// // let h = Math.floor(Math.random() * 30) + 180;
-	// let h = 60;
-	// let s = 100;
-	// let l = 70;
-	// let randomColor = `hsl(${h}deg, ${s}%, ${l}%)`;
-
 	gridCell.style.backgroundColor = randomColor;
 }
